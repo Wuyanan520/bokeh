@@ -26,7 +26,7 @@ export class AbstractButtonView extends WidgetView
 
     @$el.empty()
     html = @template(@model.attributes)
-    @$el.append(html)
+    @el.appendChild(html)
 
     $button = @$el.find('button')
 
